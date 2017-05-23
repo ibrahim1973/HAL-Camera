@@ -9,11 +9,11 @@
 #include "kd_imgsensor_define.h"
 
 
-#include "camera_isp_s5k4h5ycmipiraw.h"
-#include "camera_3a_s5k4h5ycmipiraw.h"
-#include "camera_shading_s5k4h5ycmipiraw.h"
-#include "camera_AE_PLineTable_s5k4h5ycmipiraw.h"
-#include "camera_tsf_s5k4h5ycmipiraw.h"
+#include "camera_isp_ov8858mipiraw.h"
+#include "camera_3a_ov8858mipiraw.h"
+#include "camera_shading_ov8858mipiraw.h"
+#include "camera_AE_PLineTable_ov8858mipiraw.h"
+#include "camera_tsf_ov8858mipiraw.h"
 #include "camera_custom_AEPlinetable.h"
 #include "camera_custom_tsf_tbl.h"
 
@@ -22,7 +22,7 @@
 
 
 
-typedef NSFeature::RAWSensorInfo<S5K4H5YC_SENSOR_ID> SensorInfoSingleton_T;
+typedef NSFeature::RAWSensorInfo<0x8858> SensorInfoSingleton_T;
 
 
 

@@ -52,8 +52,8 @@ static void get_flicker_para2(FLICKER_CUST_PARA* para, int flickerGradThreshold,
   {
     para->flickerFreq[i]=freq[i];
   }
-  para->flickerGradThreshold=24;
-  para->flickerSearchRange=8;
+  para->flickerGradThreshold=flickerGradThreshold;
+  para->flickerSearchRange=flickerSearchRange;
   para->minPastFrames=3;
   para->maxPastFrames=14;
   para->EV50_L50=EV50_L50;
@@ -73,10 +73,10 @@ static void get_flicker_para_by_Preview(FLICKER_CUST_PARA* para)
   get_flicker_para(para, 24, 40);
 }
 
-static void get_flicker_para_by_Video(FLICKER_CUST_PARA* para int num)
+static void get_flicker_para_by_Video(FLICKER_CUST_PARA* para, int num)
 {
   if (num = 1)
-  	get_flicker_para2(para);
+  	get_flicker_para2(para, 24, 8);
   else
   	get_flicker_para(para, 24, 40);
 }

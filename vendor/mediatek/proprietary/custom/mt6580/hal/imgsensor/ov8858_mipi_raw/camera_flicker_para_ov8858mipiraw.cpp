@@ -72,7 +72,7 @@ static void get_flicker_para_by_Capture(FLICKER_CUST_PARA* para)
 }
 
 
-typedef NSFeature::RAWSensorInfo<OV8858_SENSOR_ID> SensorInfoSingleton_T;
+typedef NSFeature::RAWSensorInfo<0x8858> SensorInfoSingleton_T;
 namespace NSFeature {
 template <>
 UINT32
